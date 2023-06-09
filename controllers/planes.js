@@ -55,7 +55,7 @@ const createPlane = async (req, res) => {
       name,
       price,
       description,
-      planeImage: `http://localhost:/${process.env.PORT}/static/${req.file.filename}`,
+      planeImage: `http://localhost:${process.env.PORT}/static/${req.file.filename}`,
       //   planeImage,
       capacity,
     });
